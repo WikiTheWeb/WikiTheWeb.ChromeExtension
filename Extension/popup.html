@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 14px;
+            line-height: 2em;
+            width: 300px;
+            background-color: #FAFAFA;
+        }
+
+        a {
+            text-decoration: none;
+            color: #424242;
+        }
+
+            a:hover {
+                color: #2962FF;
+            }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .notification {
+            display: none;
+            background-color: #90CAF9;
+            border-radius: 10px;
+            border: 1px solid #1565C0;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <h3>WikiTheWeb</h3>
+        <img src="logo.png" style="width:150px;">
+    </div>
+    <hr />
+    <div class="status" id="Status_Enabled">
+        WikiTheWeb extension is active.
+    </div>
+    <div class="status" id="Status_Disabled">
+        WikiTheWeb extension is disabled.
+    </div>
+    <div class="notification" id="RefreshNotification">
+        Please refresh the page in order for changes to take effect.
+    </div>
+    <div>
+        <div>
+            <a id="ChangeStatus_Disable" href="#">Pause WikiTheWeb</a>
+            <a id="ChangeStatus_Enable" href="#">Resume WikiTheWeb</a>
+        </div>
+        <div>
+            <a id="Block_Page" href="#">Don't run on this page</a>
+            <a id="Unblock_Page" href="#">Enable WikiTheWeb on this page</a>
+        </div>
+        <div>
+            <a id="Block_Domain" href="#">Don't run on pages on this domain</a>
+            <a id="Unblock_Domain" href="#">Enable WikiTheWeb on this domain</a>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <a target="_blank" href="mailto:support@wikitheweb.com">Ran into an issue? Click here to report.</a>
+    </div>
+    <div>
+        <a target="_blank" href="mailto:support@wikitheweb.com">Have a suggestion? Do let us know!</a>
+    </div>
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
