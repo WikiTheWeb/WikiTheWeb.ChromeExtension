@@ -24,11 +24,11 @@ function Init() {
         var Script = document.createElement("script");
         Script.id = "WikiTheWeb-JS";
         Script.src = "//www.wikitheweb.com/js/library.js";
-        Script.onload = function () {
+        //Script.onload = function () {
             //console.log("WikiTheWeb loaded");
             //window.WikiTheWeb.Popover.Init();
             //console.log("WikiTheWeb Init");
-        };
+        //};
         document.body.appendChild(Script);
     };
 
